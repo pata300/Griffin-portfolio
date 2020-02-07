@@ -2,22 +2,37 @@
 <html>
 	<head>
 		<title>My Portfolio</title>
+		<link href="index.css" rel="stylesheet" type="text/css" >
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	</head>
 	<body>
-		<nav id="top-navbar">
-			<a href="#section-showcase"><strong>Portfolio Name</strong></a>
-			<ul>
-				<li>	<a href="#section-home"> Home </a>		</li>
-				<li>	<a href="#section-about"> About </a>		</li>
-				<li>	<a href="#section-projects"> Projects </a>		</li>
-				<li>	<a href="#section-blog"> Blog </a>		</li>
-				<li>	<a href="#section-contact"> Contact </a>		</li>
+		<nav class="navbar navbar-expand-lg navbar-light bg-dark text-white" id="top-navbar">
+			<a href="#section-showcase"><strong>Patrick Griffin's Portfolio</strong></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+						<a href="#section-home"> Home </a>		</li>
+				<li class="nav-item">
+						<a href="#section-about"> About </a>		</li>
+				<li class="nav-item">
+						<a href="#section-projects"> Projects </a>		</li>
+				<li class="nav-item">
+						<a href="#section-blog"> Blog </a>		</li>
+				<li class="nav-item">
+						<a href="#section-contact"> Contact </a>		</li>
 		</nav>
 
-		<section id="section-showcase">
-			<div>
-				<h1> My Title Here. </h1>
-				<p> description goes here </p>
+		<section id="section-showcase" class="banner-pic">
+			<div class="black-highlight text-center">
+				<h1> College Portfolio </h1>
+				<p> My collection of college projects. </p>
 			</div>
 		</section>
 
@@ -35,13 +50,14 @@
 				Patrick Griffin project website.
 		</section>
 
-		<section id="section-about">
+		<section id="section-about" class="banner">
 			<h1> About </h1>
 			<hr>
 			<div>
-				<h4> Patrick Griffin </h4>
-				<p> I am an junior at UNO working on a bachalor's in Computer Science. </p>
+				<h4> Patrick Griffin <img src='images/profilepic.png' height="180px" width="180px" align="right"></h4>
+				<p> I am an junior at UNO working on a bachalor's in Computer Science.  </p>
 			</div>
+
 
 			<table>
 				<thread>
@@ -75,9 +91,6 @@
 					<a href='#' target="_blank">
 						<div>
 							<p>Project</p>
-						</div>
-						<img src='imgaes/logo.png'>
-						<div>
 							<h4>Project Name</h4>
 						</div>
 						<div>
@@ -88,7 +101,7 @@
 			</div>
 		</section>
 
-		<section id="section-blog">
+		<section id="section-blog" class="banner">
 			<h1>Blog</h1>
 			<hr>
 			<p>Explain what your blog will be about.</p>
@@ -130,5 +143,10 @@
 				<p>Copyright &copy; 2020 Patrick Griffin</p>
 			</div>
 		</footer>
+	
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	
 	</body>
 </html>
